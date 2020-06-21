@@ -1,0 +1,14 @@
+drop database nm;
+create database nm;
+use nm;
+CREATE TABLE `nm`.`rf_developer_projects` (
+  `datasource_id` INT,
+  `dev_loginname` VARCHAR(100) NULL,
+  `dev_unixname` VARCHAR(100) NULL
+);
+
+CREATE TABLE `nm`.`datasources` (
+  `datasource_id` INT,
+  `date_donated` DATE NULL,
+  `comments` VARCHAR(255) NULL
+  );
